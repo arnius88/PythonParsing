@@ -1,58 +1,24 @@
-<h1>JWipe - Disk Sanitization</h1>
-
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
-
-<h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
-<br />
+<h1>Parsing Files Content</h1>
 
 
-<h2>Languages and Utilities Used</h2>
+<h2>Project description and scenario</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+I am a cybersecurity professional working at a private health care company. I was asked to update the list of employees that have access to sensitive information. The IP addresses of these employees are included in a file called `"allow_list.txt"`. There's also a separate list that identifies which employees must be remove from `"allow_list.txt"`. Below is an explanation of how I created an algorithm using Python to automate the update of the restricted list.
+<br />
 
-<h2>Environments Used </h2>
+<h2>Project walk-through:</h2>
 
-- <b>Windows 10</b> (21H2)
+<h3><p align="center">Open the file that contains the allow list:</h3>
 
-<h2>Program walk-through:</h2>
+Firstly, I assigned `"allow_list.txt"` as a string belonging to variable called `import_file`:
+<br/>
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<img width="50%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/8e4fbf8d-3dfc-48c7-956a-eafb9a0e7ab9"><br/>
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+As the second step, I used a `with` statement to open the file:
+<br/>
+
+<img width="50%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/9379ebed-1620-4ff8-a1e4-f65cdda4432e"><br/>
+
+The `with` statement allowed me to use the `.open()` function to access the content of the file in read mode. This is possible by specifying the name of the file to open and the action I want to perform on the file, through the two parameters of the `.open()` function included within the `()`. In this case, with the first parameter I call `import_file`, whilst with the second parameter I specify that I want to read the file by including the string `“r”`. The code also uses the as keyword to assign a variable named `file` which stores the output of the `.open()` function. `with` automatically closes the file after the `with` statement has run.<br/>
+
