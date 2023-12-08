@@ -22,3 +22,19 @@ As the second step, I used a `with` statement to open the file:
 
 The `with` statement allowed me to use the `.open()` function to access the content of the file in read mode. This is possible by specifying the name of the file to open and the action I want to perform on the file, through the two parameters of the `.open()` function included within the `()`. In this case, with the first parameter I call `import_file`, whilst with the second parameter I specify that I want to read the file by including the string `“r”`. The code also uses the as keyword to assign a variable named `file` which stores the output of the `.open()` function. `with` automatically closes the file after the `with` statement has run.<br/>
 
+<h3><p align="center">Read the file contents:</h3>
+
+To be able to read its content, the file has to be converted into a string. For this purpose, I used the `.read()` method:
+<br/>
+
+<img width="80%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/1353ca32-c5eb-4cb9-8b3a-c57efefbbb95">
+<br/>
+
+I can now call a `.read()` method directly within the body of with. `.read()` directly converts files into strings that are readable in Python. For that reason, I used the following syntax:
+<br/>
+
+```ip_addresses = file.read()```
+<br/>
+
+This allowed me to convert the content of file into a string. At the same time, I assigned it to a new variable called `ip_addresses`, to simplify usability in the future.<br/>
+
