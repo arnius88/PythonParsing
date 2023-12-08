@@ -38,3 +38,12 @@ I can now call a `.read()` method directly within the body of with. `.read()` di
 
 This allowed me to convert the content of file into a string. At the same time, I assigned it to a new variable called `ip_addresses`, to simplify usability in the future.<br/>
 
+<h3><p align="center">Convert the string into a list:</h3>
+
+To remove individual IP addresses from the `"allow_list.txt"`, I needed its content to be in list format. Therefore, I next used the `.split()` method to convert the `ip_addresses` string into a list:<br/>
+
+<img width="80%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/92349b97-e0d0-45c7-ab0a-7b9e5692a6e3"><br/>
+
+The `.split()` function is called by appending it to a string variable. The purpose of splitting `ip_addresses` into a list is to make it easier to remove IP addresses from the allow list. By default, the `.split()` function splits the text by whitespace into list elements. In this algorithm, the `.split()` function takes the data stored in the variable `ip_addresses`, a string of elements each separated by a whitespace, and converts it into a list. To store this list, I reassigned it back to the variable `ip_addresses`.<br/>
+
+
