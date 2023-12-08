@@ -68,3 +68,20 @@ The conditional statement is opened by the `if` keyword. In essence, the stateme
 `element` was assigned as the argument of the `.remove()` method. This way the loop iteration was able to remove each IP addresses marked in the `remove_list` from the `ip_addresses` list.
 <br/>
 
+<h3><p align="center">Update the file with the revised list of IP addresses:</h3>
+
+Next step was about updating the original allow list file with the revised list of authorized IP addresses. The first thing I needed to do was to convert the list back into a string using the `.join()` method.<br/>
+
+<img width="80%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/28b30ee8-6775-4672-8091-c97f909004f2"><br/>
+
+The `.join()` method takes in an iterable as its argument and concatenates every element of it into a string. In this case, the argument of the `.join()` method is `ip_addresses`. The `.join()` method is appended to a string consisting of the character that will be used to separate every element in the iterable once this is converted into a string. In my case, I use the string `"\n"`, which instructs Python to place each element into a new line. I reassigned the syntax to the same variable `ip_addresses`, so I was able to use it later in conjunction with the `.write()` method.<br/>
+
+<img width="80%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/0a3e6127-5bb3-45c7-a082-13e4911ca267"><br/>
+
+In the following step, the write statement allowed me to open the original `import_file` using `.open()`, once again. In this case, the second argument of the `.open()` method was `”w”` which clarifies that I want to overwrite the content already present in `import_file`.<br/>
+
+To make sure that the data in `"allow_list.txt"` is updated and that only authorized users can access restricted information, I needed to write over the existing content of the allow list using the `.write()` method. I did this by appending `.write()` to the `file` object and passing the `ip_addresses` variable as its argument.<br/>
+
+<h3><p align="center">Project Summary:</h3>
+
+I created an algorithm that removes IP addresses identified in a `remove_list` variable from the `"allow_list.txt"` file of approved IP addresses. This algorithm involved opening the file, converting it to a string to be read, and then converting this string to a list stored in the variable `ip_addresses`. I then iterated through the IP addresses in `ip_addresses`. With each iteration, I evaluated if the element was part of the `remove_list` list. If it was, I applied the `.remove()` method to it to remove the element from `ip_addresses`. After this, I used the `.join()` method to convert the `ip_addresses` back into a string so that I could write over the contents of the `"allow_list.txt"` file with the revised list of IP addresses.<br/>
