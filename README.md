@@ -46,4 +46,25 @@ To remove individual IP addresses from the `"allow_list.txt"`, I needed its cont
 
 The `.split()` function is called by appending it to a string variable. The purpose of splitting `ip_addresses` into a list is to make it easier to remove IP addresses from the allow list. By default, the `.split()` function splits the text by whitespace into list elements. In this algorithm, the `.split()` function takes the data stored in the variable `ip_addresses`, a string of elements each separated by a whitespace, and converts it into a list. To store this list, I reassigned it back to the variable `ip_addresses`.<br/>
 
+<h3><p align="center">Iterate through the remove list:</h3>
+
+At this point, I needed to iterate through the list of IP addresses within `ip_addresses`. To do this, I used a `for` loop, which, in Python, repeats code for a specific sequence.<br/>
+
+<img width="50%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/c12c4c9a-c8cf-4cce-bcf0-08389d8a29e1"><br/>
+
+The overall purpose of the `for` loop in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The `for` keyword starts the `for` loop. It is followed by the loop variable `element` and the keyword `in`. The keyword `in` indicates to iterate through the sequence `ip_addresses` and assign each value to the loop variable element.<br/>
+
+<h3><p align="center">Remove IP addresses that are on the remove list:</h3>
+
+Moving on, I needed to build a conditional statement that would allow me to remove the elements of `ip_addresses` that are also contained in `remove_list`. I placed the statement inside the body of the `for` loop:<br/>
+
+<img width="80%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/ad2e5e93-b48b-4627-b5b7-6e515db5c766">
+
+The conditional statement is opened by the `if` keyword. In essence, the statement is saying that if any element of the `ip_addresses` list is also found in `remove_list`, then the specific element should be removed from `ip_addresses`. I achieved this by appending the `.remove()` method using the following syntax:<br/>
+
+```ip_addresses.remove(element)```
+<br/>
+
+`element` was assigned as the argument of the `.remove()` method. This way the loop iteration was able to remove each IP addresses marked in the `remove_list` from the `ip_addresses` list.
+<br/>
 
