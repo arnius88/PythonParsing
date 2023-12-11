@@ -56,7 +56,7 @@ The overall purpose of the `for` loop in a Python algorithm like this is to appl
 
 <h3><p align="center">Remove IP addresses that are on the remove list:</h3>
 
-Moving on, I needed to build a conditional statement that would allow me to remove the elements of `ip_addresses` that are also contained in `remove_list`. I placed the statement inside the body of the `for` loop:<br/>
+Moving on, I needed to build a conditional statement that would allow me to remove all those elements contained in `ip_addresses` that are also included in `remove_list`. I placed the statement inside the body of the `for` loop:<br/>
 
 <img width="80%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/ad2e5e93-b48b-4627-b5b7-6e515db5c766">
 
