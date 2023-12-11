@@ -52,7 +52,7 @@ At this point, I needed to iterate through the list of IP addresses within `ip_a
 
 <img width="50%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/c12c4c9a-c8cf-4cce-bcf0-08389d8a29e1"><br/>
 
-The overall purpose of the `for` loop in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The `for` keyword starts the `for` loop. It is followed by the loop variable `element` and the keyword `in`. The keyword `in` indicates to iterate through the sequence `ip_addresses` and assign each value to the loop variable element.<br/>
+The overall purpose of the `for` loop in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The `for` keyword starts the `for` loop. It is followed by the loop variable `element` and the keyword `in`. The keyword `in` indicates to iterate through the sequence `ip_addresses` and assign each value to the loop variable `element`.<br/>
 
 <h3><p align="center">Remove IP addresses that are on the remove list:</h3>
 
