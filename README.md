@@ -30,7 +30,7 @@ To be able to read its content, the file has to be converted into a string. For 
 <img width="80%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/1353ca32-c5eb-4cb9-8b3a-c57efefbbb95">
 <br/>
 
-I can now call a `.read()` method directly within the body of with. `.read()` directly converts files into strings that are readable in Python. For that reason, I used the following syntax:
+I can now call a `.read()` method directly within the body of `with`. `.read()` directly converts files into strings that are readable in Python. For that reason, I used the following syntax:
 <br/>
 
 ```ip_addresses = file.read()```
