@@ -52,7 +52,7 @@ At this point, I needed to iterate through the list of IP addresses within `ip_a
 
 <img width="50%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/c12c4c9a-c8cf-4cce-bcf0-08389d8a29e1"><br/>
 
-The overall purpose of the `for` loop in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The `for` keyword starts the `for` loop. It is followed by the loop variable `element` and the keyword `in`. The keyword `in` indicates to iterate through the sequence `ip_addresses` and assign each value to the loop variable `element`.<br/>
+The overall purpose of the `for` loop in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The `for` keyword opens the loop. It is followed by the loop variable `element` and the keyword `in`. The keyword `in` indicates to iterate through the sequence `ip_addresses` and assign each value to the loop variable `element`.<br/>
 
 <h3><p align="center">Remove IP addresses that are on the remove list:</h3>
 
@@ -60,12 +60,12 @@ Moving on, I needed to build a conditional statement that would allow me to remo
 
 <img width="80%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/ad2e5e93-b48b-4627-b5b7-6e515db5c766">
 
-The conditional statement is opened by the `if` keyword. In essence, the statement is saying that if any element of the `ip_addresses` list is also found in `remove_list`, then the specific element should be removed from `ip_addresses`. I achieved this by appending the `.remove()` method using the following syntax:<br/>
+The conditional statement is opened by the `if` keyword. In essence, the statement is saying that if any element of the `ip_addresses` list is also found in `remove_list`, then the specific element should be removed from `ip_addresses`. I achieved this by appending the `.remove()` method and assigning `element` as its argument:<br/>
 
 ```ip_addresses.remove(element)```
 <br/>
 
-`element` was assigned as the argument of the `.remove()` method. This way the loop iteration was able to remove each IP addresses marked in the `remove_list` from the `ip_addresses` list.
+This way the loop iteration was able to remove each IP addresses marked in the `remove_list` from the `ip_addresses` list.
 <br/>
 
 <h3><p align="center">Update the file with the revised list of IP addresses:</h3>
