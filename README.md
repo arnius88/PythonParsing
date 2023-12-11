@@ -10,7 +10,7 @@ I am a cybersecurity professional working at a private health care company. I wa
 
 <h3><p align="center">Open the file that contains the allow list:</h3>
 
-Firstly, I assigned `"allow_list.txt"` as a string belonging to variable called `import_file`:
+Firstly, I assigned `"allow_list.txt"` as a string belonging to a variable called `import_file`:
 <br/>
 
 <img width="50%" alt="image" src="https://github.com/arnius88/PythonParsing/assets/152484037/8e4fbf8d-3dfc-48c7-956a-eafb9a0e7ab9"><br/>
