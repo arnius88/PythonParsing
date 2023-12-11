@@ -36,7 +36,7 @@ I can now call a `.read()` method directly within the body of `with`. `.read()` 
 ```ip_addresses = file.read()```
 <br/>
 
-This allowed me to convert the content of file into a string. At the same time, I assigned it to a new variable called `ip_addresses`, to simplify usability in the future.<br/>
+This allowed me to convert the content of `file` into a string. At the same time, I assigned it to a new variable called `ip_addresses`, to simplify usability in the future.<br/>
 
 <h3><p align="center">Convert the string into a list:</h3>
 
