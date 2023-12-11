@@ -65,9 +65,6 @@ The conditional statement is opened by the `if` keyword. In essence, the stateme
 ```ip_addresses.remove(element)```
 <br/>
 
-This way the loop iteration was able to remove each IP addresses marked in the `remove_list` from the `ip_addresses` list.
-<br/>
-
 <h3><p align="center">Update the file with the revised list of IP addresses:</h3>
 
 Next step was about updating the original allow list file with the revised list of authorized IP addresses. The first thing I needed to do was to convert the list back into a string using the `.join()` method.<br/>
